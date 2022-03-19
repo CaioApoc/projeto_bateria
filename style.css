@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: url(./img/back.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column; /*pra deixar eles um em cima do outro*/
+}
+
+.tittle{
+    color: #ffcc00;
+    margin: 15vh auto; /*o titulo sempre fica no centro com a altura de 10ch*/
+    font-size: calc(5vw + 20px); /**/
+    text-shadow: 0 0 20px black,0 0 20px black,0 0 20px black; /*repetindo para deixar a sombra mais forte*/
+    user-select: none;
+}
+
+.container{
+    width: 90vw;
+    height: 100px;
+    margin: 0 auto;/*centraliando a div onde vai ficar as letras*/
+    display: flex; /*para deixar as letras dentro da div uma do lado da outra*/
+    flex-wrap: wrap; /*pra ter quebra nas letras e manter espaco entre elas*/
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.key{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000BA;
+    color: white;
+    font-size: calc(3vw + 20px);
+    border: 3px solid white;
+    user-select: none; /*para o usuario nao conseguir selecionar as letras*/
+    cursor: pointer; /*para deixar a mao no cursor do mouse sobre as letras*/
+    transition: transform 400ms;
+}
+
+/*
+.key:hover{
+    transform: scale(1.3);
+    border-color: #ffcc00;
+    box-shadow: 0 0 50px #ffcc00;
+}
+*/
+
+.active{
+    transform: scale(1.3);
+    border-color: #ffcc00;
+    box-shadow: 0 0 50px #ffcc00;
+}
+
+footer{
+    display: flex;
+    color: #ffcc00;
+    justify-content: center;
+    margin-top: 140px; 
+      
+}
